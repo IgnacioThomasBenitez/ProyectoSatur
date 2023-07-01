@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pagina Producto</title>
+		<link rel="stylesheet" href="../CSS/Inicio.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Satur</h1>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" required/>
+                <div class="btn"><i class="fas fa-search icon"></i></div>
+            </div>
+		</header>
+
+		<div class="container-title">
+            <h1>HARDWARE</h1>
+        </div>
+
+		<main>
+			<div class="container-img">
+				<img src="../imagenes/png-clipart-graphics-cards-video-adapters-gddr5-sdram-nvidia-geforce-gtx.png" alt="imagen-producto"/>
+			</div>
+			<div class="container-info-product">
+				<div class="container-price">
+					<span>$189.900</span>
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+
+				<div class="container-details-product">
+					<div class="form-group">
+						<form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+					</div>
+				</div>
+
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input type="number" placeholder="1" value="1" min="1" class="input-quantity"/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i>
+							<i class="fa-solid fa-chevron-down" id="decrement"></i>
+						</div>
+					</div>
+					<button class="btn-add-to-cart"><i class="fa-solid fa-plus"></i>Añadir al carrito</button>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Laboriosam iure provident atque voluptatibus
+							reiciendis quae rerum, maxime placeat enim cupiditate
+							voluptatum, temporibus quis iusto. Enim eum qui delectus
+							deleniti similique? Lorem, ipsum dolor sit amet
+							consectetur adipisicing elit. Sint autem magni earum est
+							dolorem saepe perferendis repellat ipsam laudantium cum
+							assumenda quidem quam, vero similique? Iusto officiis
+							quod blanditiis iste?
+						</p>
+					</div>
+				</div>
+
+				<div class="container-additional-information">
+					<div class="title-additional-information">
+						<h4>Información adicional</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-additional-information hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-reviews">
+					<div class="title-reviews">
+						<h4>Reseñas</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-reviews hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-social">
+					<span>Compartir</span>
+					<div class="container-buttons-social">
+						<a href="#"><i class="fa-solid fa-envelope"></i></a>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section class="container-related-products">
+			<h2>Productos Relacionados</h2>
+			<div class="card-list-products">
+				<div class="card">
+					<div class="card-img">
+						<img src="../imagenes/i5.jpg" alt="producto-1"/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Procesador Core i5</h3>
+							<p class="category">i5-10400F 10TH-GEN</p>
+						</div>
+						<div class="price">$189.900</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img src="../imagenes/fury(8GB).jpg" alt="producto-2"/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Memoria Ram Fury</h3>
+							<p class="category">8GB DDR4</p>
+						</div>
+						<div class="price">$15.500</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img src="/imagenes/gabinete.jpg" alt="producto-3"/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Adidas - Boston Super OG</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$105.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img src="/imagenes/fuente750.jpg" alt="producto-4"/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Common Projects Achilles</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$250.00</div>
+					</div>
+				</div>
+                <div class="card">
+					<div class="card-img1">
+						<img src="/imagenes/portada2.webp" alt="producto-4"/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Common Projects Achilles</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$250.00</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>Footer</p>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="../JS/script.js"></script>
+	</body>
+</html>

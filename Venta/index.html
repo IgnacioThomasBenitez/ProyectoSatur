@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATUR</title>
+    <link rel="shortcut icon" href="../imagenes/satur.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../Venta/main.css">
+    <link rel="stylesheet" href="../Venta/navigation.css">
+    <link rel="stylesheet" href="../Venta/barra.css">
+    <link rel="stylesheet" href="../Venta/menum.cs">
+     <!-- BOXICONS -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="busqueda.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Venta de Hardware</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Venta de Hardware</h1>
+                <form class="seach-box">
+                    <input type="text" placeholder="Buscar">
+                    <button type="reset"></button>
+                </form>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <div class="container">
+                    <!-- scroll -->
+                        <li>
+                            <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill">
+                            </i>Todos los productos</button>
+                        </li>
+                        <li>
+                            <button id="IMPRESORAS" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>IMPRESORAS</button>
+                        </li>
+                        <li>
+                            <button id="RAM" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>RAM</button>
+                        </li>
+                        <li>
+                            <button id="PLACA" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>PLACA</button>
+                        </li>
+                        <li>
+                            <button id="SSD" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>SSD</button>
+                        </li>
+                        <li>
+                            <button id="VIDEO" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>PLACAVIDEO</button>
+                        </li>
+                        <li>
+                            <button id="FUENTE" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>FUENTES</button>
+                        </li>
+                        <li>
+                            <button id="GABINETES" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>GABINETES</button>
+                        </li>
+                        <li>
+                            <button id="USB" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>USB</button>
+                        </li>
+                        <li>
+                            <button id="AURICULARES" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>AURICULARES</button>
+                        </li>
+                        <li>
+                            <button id="PARLANTES" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>PARLANTES</button>
+                        </li>
+                        <li>
+                            <button id="MOUSES" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>MOUSES</button>
+                        </li>
+                        <li>
+                            <button id="MONITORES" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>MONITORES</button>
+                        </li>
+                    </div>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="../Venta/carrito.html">
+                            <i class="bi bi-cart-fill"></i>Carritos<span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">
+                    
+                    <nav class="nav">
+                        <ul class="nav__links">
+                          <li class="nav__link active">
+                            <a href="index.html"><i class='bx bx-home-alt-2'></i></a>
+                          </li>
+                          <li class="nav__link">
+                            <a href="#"><i class='bx bx-plus-circle' ></i></a>
+                          </li>
+                          <li class="nav__link">
+                            <a href="perfil.html"><i class='bx bx-user' ></i></a>
+                          </li>
+                          <li class="nav__link">
+                            <a href="perfil.html"><i class='fi fi-br-square-right' ></i></a>
+                          </li>
+                          <div class="nav__light"></div>
+                        </ul>
+                    </nav>
+                </p>
+            </footer>
+            
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+        </main>
+    </div>
+    <!-- JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+    <script src="barra.js"></script>
+</body>
+</html>

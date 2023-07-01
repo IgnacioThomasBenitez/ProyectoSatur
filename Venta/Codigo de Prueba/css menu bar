@@ -1,0 +1,15 @@
+
+
+.nav__light{
+  position: absolute;
+  top: 0;
+  background-color: var(--white-color);
+  width: 4em;
+  height: .4em;
+  border-radius: 2px;
+
+  display: flex;
+  justify-content: center;
+
+  transition: .3s ease;
+}

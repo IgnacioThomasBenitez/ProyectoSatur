@@ -1,0 +1,11 @@
+
+    {
+        "id": "RAM-05",
+        "titulo": "fury(8GB)",
+        "imagen": "../Venta/img/fury(8GB).jpg",
+        "categoria": {
+            "nombre": "RAM",
+            "id": "RAM"
+        },
+        "precio": 1000
+    }
