@@ -2,26 +2,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
-    height: 97.4vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(20, 9, 233);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(12, 26, 212) 35%, rgb(0, 38, 255) 100%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-}
-
 header{
     height: 450px;
     background-size: cover;
-}
-
-h1{
-    font-size: 30px;
 }
 
 section{
@@ -54,3 +37,40 @@ section img{
     border-radius: 18px;
     font-size: 40px;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(20, 9, 233);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(26, 35, 161) 35%, rgb(0, 38, 255) 100%);
+  
+  }
+  
+  p {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
