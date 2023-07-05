@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     background: rgb(20, 9, 233);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(26, 35, 161) 35%, rgb(0, 38, 255) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
