@@ -2,7 +2,7 @@
 
 :root {
     --clr-main: #231169;
-    --clr-main-light: #3201f5;
+    --clr-main-light: rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
