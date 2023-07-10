@@ -20,7 +20,6 @@ body {
 }
 
 img{
-    width: 60px;
     height: 60px;
 }
 
@@ -34,6 +33,7 @@ img{
     display: flex;
     justify-content: space-around;
     transition:  all .5s ease-out;
+    margin-top: -55px;
 }
 
 .welcome-back {

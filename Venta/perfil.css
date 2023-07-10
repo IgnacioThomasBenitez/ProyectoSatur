@@ -1,0 +1,44 @@
+body{
+  background-color: #4b33a8;
+
+}
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  background-color: #e4c9c9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(175, 165, 165, 0.3);
+  width: 50em;
+}
+
+.conteiner img {
+  width: 150px;
+  height: 100px;
+}
+
+.profile-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  
+}
+
+.ul {
+  font-size: 16px;
+  margin-right: 200em;
+  display: flex;
+}
+ input {
+  border: none;
+  outline: none;
+  background-color: transparent ;
+}

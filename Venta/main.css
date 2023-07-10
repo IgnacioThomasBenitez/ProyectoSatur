@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #4b33a8;
+    --clr-main: #231169;
     --clr-main-light: #3201f5;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
@@ -18,6 +18,10 @@
 h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
     margin: 0;
     padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 1%;
 }
 
 ul {
@@ -157,6 +161,7 @@ main {
 .titulo-principal {
     color: var(--clr-main);
     margin-bottom: 2rem;
+    display: flex;
 }
 
 .contenedor-productos {
@@ -331,13 +336,11 @@ main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
 @media screen and (max-width: 675px) {
     .contenedor-productos {
         grid-template-columns: 1fr 1fr;
     }
 }
-
 @media screen and (max-width: 600px) {
 
     .wrapper {
@@ -423,9 +426,6 @@ main {
     
 
 }
-
-
-
 @media screen and (max-width: 400px) {
     .contenedor-productos {
         grid-template-columns: 1fr;

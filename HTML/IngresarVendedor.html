@@ -11,6 +11,7 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../CSS/vendedor.css">
+  <link rel="shortcut icon" href=".../imagenSatur/satur.jpg" type="image/x-icon">
 </head>
 <body>
   <div class="form">
@@ -20,42 +21,47 @@
     </ul>
     <div class="tab-content">
       <div id="signup">
-        <h1>REGISTRATE</h1>
+        <h1>REGISTRATE VENDEDOR</h1>
         <form action="/" method="post">
-          <div class="top-row">
-            <div class="field-wrap">
-              <input type="text" required placeholder="NOMBRE" />
-            </div>
-            <div class="field-wrap">
-              <input type="text" required placeholder="APELLIDO" />
-            </div>
-          </div>
-		  <div class="top-row">
-            <div class="field-wrap">
+			<div class="field-wrap">
+				<input type="text" required placeholder="NOMBRE DE EMPRESA" />
+			</div>
+			<div class="field-wrap">
+				<input type="text" required placeholder="DIRECCION" />
+			</div>
+			<div class="field-wrap">
+				<input type="number" required placeholder="TELEFONO DE EMPRESA" />
+			</div>
+			<div class="field-wrap">
 				<input type="email" required placeholder="EMAIL"/>
-			  </div>
-			  <div class="field-wrap">
-				<input type="password" required placeholder="CONTRASEÑA" />
-			  </div>
-          </div>
-		  <div class="field-wrap">
-            <input type="date" required placeholder="FECHA" />
-          </div>
-          <button type="submit" class="button button-block" >REGISTRATE</button>
+			</div>
+		  	<div class="top-row">
+            	<div class="field-wrap">
+					<input type="password" required placeholder="CONTRASEÑA"/>
+				</div>
+				<div class="field-wrap">
+					<input type="password" required placeholder="REPITA SU CONTRASEÑA" />
+				</div>
+          	</div>
+          <button type="submit" class="button button-block">REGISTRATE</button>
         </form>
       </div>
 
 
-      <div id="login">
+      <div id="login" class="login">
         <h1>Bienvenido a Satur Vendedor</h1>
         <form action="/" method="post">
-          <div class="field-wrap">
+          	<div class="field-wrab">
             <input type="email" required placeholder="EMAIL" />
-          </div>
-          <div class="field-wrap">
-            <input type="password" required placeholder="CONTRASEÑA" />
-          </div>
-          <p class="forgot"><a href="https://www.web-leb.com/code">Olvidaste tu Contraseña?</a></p>
+          	</div>
+          	<div class="field-wrab">
+            	<input type="password" required placeholder="CONTRASEÑA" />
+          	</div>
+			  <p class="forgot"><a href="#">Olvidaste tu Contraseña?</a></p>
+		  	<div class="field-wrab">
+				<input type="text" required placeholder="CLAVE DE VENDEDOR" />
+			</div>
+          <p class="forgot"><a href="#">Olvidaste tu Clave?</a></p>
           <button class="button button-block">Iniciar</button>
         </form>
       </div>

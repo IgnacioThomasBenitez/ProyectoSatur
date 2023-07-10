@@ -14,14 +14,14 @@
 
 /* ------------ MENU ------------ */
 .nav{
-  background-color:#4b33a8;
+  background-color:--tab-color;
   width: 15em;
   border-radius: 1em;
   padding: 0 2em;
-  box-shadow: 0 1em 1em #4b33a8;
+  box-shadow: 0 1em 1em --tab-color;
   display: flex;
   align-items: center;
-
+ 
   position: relative;
   overflow: hidden;
 }
@@ -44,7 +44,7 @@
   height: 7em;
   position: absolute;
   top: .4em;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.007) -50%, rgba(255,255,255, 0) 90%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.007) -50%, rgba(31, 183, 221, 0) 90%);
   clip-path: polygon(30% 0, 70% 0, 100% 100%, 0% 100%);
 }
 
@@ -106,7 +106,7 @@
   .nav__links{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .nav__link a{

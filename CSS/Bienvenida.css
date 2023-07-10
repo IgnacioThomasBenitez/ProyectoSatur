@@ -1,90 +1,55 @@
-/* *{ 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-header{
-    height: 450px;
-    background-size: cover;
-}
-
-section{
-    margin: auto;
-}
-
-section img{
-    width: 20%;
-    height: 20%;
-}
-
-.satur{
-    border-radius: 50%;
-}
-
-.conte{
-    text-align: center;
-}
-
-.conte p{
-    font-size: 60px;
-    margin: 1em 0;
-}
-
-.conte a{
-    color: white;
-    text-decoration: none;
-    background: #6df32fd3;
-    padding: 4px 4px;
-    border-radius: 18px;
-    font-size: 40px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: rgb(20, 9, 233);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(26, 35, 161) 35%, rgb(0, 38, 255) 100%);
-  
-  }
-  
-  p {
-    position: relative;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 50px;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 3s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  }
-  
-  @keyframes animate {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
-    }
-  }
-  */
-  @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 body {
   margin:0;
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 2px;
-  font-size:48px;
+  font-size:60px;
+  position: absolute;
+}
+.border{
+  color: rgb(84, 196, 149);
+  text-shadow: 
+   -1px -1px 0 white
+    1px -1px 0 white
+    1px 1px 0 white
+   -1px -1px 0 white
+  ;
+}
+.wave{
+  color: rgba(9,9,121,1);
+  animation: wave 3s ease-in-out infinite;
+}
+@keyframes wave {
+  0%, 100% {
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
 }
 p {
   font-family: 'Lato', sans-serif;
@@ -174,10 +139,10 @@ p {
 }
 @keyframes move-forever {
   0% {
-   transform: translate3d(-90px,0,0);
+   transform: translate3d(-80px,0,0);
   }
   100% { 
-    transform: translate3d(85px,0,0);
+    transform: translate3d(80px,0,0);
   }
 }
 @media (max-width: 768px) {

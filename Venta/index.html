@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SATUR</title>
-    <link rel="shortcut icon" href="../imagenes/satur.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagenSatur/satur.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../Venta/main.css">
@@ -13,8 +13,16 @@
     <link rel="stylesheet" href="../Venta/barra.css">
     <link rel="stylesheet" href="../Venta/menum.cs">
      <!-- BOXICONS -->
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <link rel="stylesheet" href="busqueda.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Venta/busqueda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+      
 </head>
 <body>
 
@@ -31,10 +39,7 @@
             </button>
             <header>
                 <h1 class="logo">Venta de Hardware</h1>
-                <form class="seach-box">
-                    <input type="text" placeholder="Buscar">
-                    <button type="reset"></button>
-                </form>
+                
             </header>
             <nav>
                 <ul class="menu">
@@ -94,7 +99,7 @@
                         </li>
                     </div>
                     <li>
-                        <a class="boton-menu boton-carrito" href="../Venta/carrito.html">
+                        <a class="boton-menu boton-carrito" href="carrito.html">
                             <i class="bi bi-cart-fill"></i>Carritos<span id="numerito" class="numerito">0</span>
                         </a>
                     </li>
@@ -102,22 +107,14 @@
             </nav>
             <footer>
                 <p class="texto-footer">
-                    
                     <nav class="nav">
                         <ul class="nav__links">
                           <li class="nav__link active">
                             <a href="index.html"><i class='bx bx-home-alt-2'></i></a>
                           </li>
-                          <li class="nav__link">
-                            <a href="#"><i class='bx bx-plus-circle' ></i></a>
+                          <li class="nav__link active">
+                            <a href="../Panel/index.html"><i class="bi bi-person-workspace"></i></a>
                           </li>
-                          <li class="nav__link">
-                            <a href="perfil.html"><i class='bx bx-user' ></i></a>
-                          </li>
-                          <li class="nav__link">
-                            <a href="perfil.html"><i class='fi fi-br-square-right' ></i></a>
-                          </li>
-                          <div class="nav__light"></div>
                         </ul>
                     </nav>
                 </p>
@@ -125,7 +122,14 @@
             
         </aside>
         <main>
-            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos
+                <div class="buscar">
+                    <input type="text" placeholder="Buscar" required />
+                    <div class="btn">
+                      <i class="fas fa-search icon"></i>
+                    </div>
+                </div>
+            </h2>
             <div id="contenedor-productos" class="contenedor-productos">
                 <!-- Esto se va a rellenar con JS -->
             </div>
@@ -133,8 +137,8 @@
     </div>
     <!-- JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="main.js"></script>
-    <script src="menu.js"></script>
-    <script src="barra.js"></script>
+    <script src="../Venta/main.js"></script>
+    <script src="../Venta/menu.js"></script>
+    <script src="../Venta/barra.js"></script>
 </body>
 </html>
