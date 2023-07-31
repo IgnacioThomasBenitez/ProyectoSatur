@@ -44,11 +44,21 @@
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="password" placeholder="Repita su Contraseña">
+            <div class="contra">
+                <input type="password" id="pass" placeholder="Contraseña">
+                <input type="checkbox" id="check">
+            </div>
+            <input type="password" id="pass" placeholder="Repita su Contraseña"> 
             <input type="button" value="Registrarse">
         </form>
     </div>
+    <script>
+        check.onclick = togglePassword;
+        function togglePassword() {
+            if (check.checked) pass.type = "text";
+            else pass.type = "password";
+        }
+    </script>
     <div class="container-form sign-in">
         <form class="formulario">
             <h2 class="create-account">Iniciar Sesion</h2>
@@ -76,7 +86,7 @@
                 <button class="sign-in-btn">Registrarse</button>
             </div>
         </div>
-        
+    </div>
     <script src="../JS/index.js"></script>
     <script src="../JS/login.js"></script>
 </body>

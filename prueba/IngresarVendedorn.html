@@ -1,0 +1,156 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satur</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../CSS/vendedor.css">
+  <link rel="shortcut icon" href=".../imagenSatur/satur.jpg" type="image/x-icon">
+</head>
+<body>
+  <div class="form">
+    <ul class="tab-group">
+      <li class="tab active"><a href="#signup" style="border-radius: 15px!important;margin-right:8x;">REGISTRATE</a></li>
+      <li class="tab"><a href="#login" style="border-radius: 15px!important;margin-left:8px;">INICIAR SESION</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="signup">
+        <h1>REGISTRATE VENDEDOR</h1>
+        <form action="/" method="post">
+			<div class="field-wrap">
+				<input type="text" required placeholder="NOMBRE DE EMPRESA" />
+			</div>
+			<div class="field-wrap">
+				<input type="text" required placeholder="DIRECCION" />
+			</div>
+			<div class="field-wrap">
+				<input type="number" required placeholder="TELEFONO DE EMPRESA" />
+			</div>
+			<div class="field-wrap">
+				<input type="email" required placeholder="EMAIL"/>
+			</div>
+		  	<div class="top-row">
+            	<div class="field-wrap">
+						<input type="password" id="pass" required placeholder="CONTRASEÑA"/>
+				</div>
+				<div class="field-wrap">
+					<input type="password" required placeholder="REPITA SU CONTRASEÑA" />
+				</div>
+          	</div>
+          <button type="submit" class="button button-block">REGISTRATE</button>
+        </form>
+      </div>
+	  <script>
+        check.onclick = togglePassword;
+        function togglePassword() {
+            if (check.checked) pass.type = "text";
+            else pass.type = "password";
+        }
+    </script>
+
+      <div id="login" class="login">
+        <h1>Bienvenido a Satur Vendedor</h1>
+        <form action="/" method="post">
+          	<div class="field-wrab">
+            <input type="email" required placeholder="EMAIL" />
+          	</div>
+          	<div class="field-wrab">
+            	<input type="password" required placeholder="CONTRASEÑA" />
+          	</div>
+			  <p class="forgot"><a href="#">Olvidaste tu Contraseña?</a></p>
+		  	<div class="field-wrab">
+				<input type="text" required placeholder="CLAVE DE VENDEDOR" />
+			</div>
+          <p class="forgot"><a href="#">Olvidaste tu Clave?</a></p>
+          <button class="button button-block">Iniciar</button>
+        </form>
+      </div>
+    </div>
+  </div> 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../JS/main.js"></script>
+</body>
+</html>
+
+<!-- 
+<!Doctype html>
+<html lang="en">
+<head>
+  <title>SATUR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="../CSS/vendedor.css">
+<link rel="shortcut icon" href="../imagenes/satur.jpg" type="image/x-icon">
+</head>
+<body>
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Iniciar Sesion</span><span>Registrate</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Iniciar Sesion</h4>
+											<div class="form-group">
+												<input type="email" class="form-style" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" class="form-style" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<button class="btn mt-4">Iniciar Sesion</button>
+                                            <p class="mb-0 mt-4 text-center">  
+                                            <a href="https://www.web-leb.com/code" class="link">Olvidaste tu Contrasea?</a>
+                                            <a href="../HTML/Ingresar.html" class="link">Volver</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-3 pb-3">Registrate</h4>
+											<div class="form-group">
+												<input type="text" class="form-style" placeholder="Full Name">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="tel" class="form-style" placeholder="Phone Number">
+												<i class="input-icon uil uil-phone"></i>
+											</div>	
+                      						<div class="form-group mt-2">
+												<input type="email" class="form-style" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<div class="form-group mt-2">
+												<input type="password" class="form-style" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<button class="btn mt-4">Registrate</button>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
+</body>
+</html>
+ -->

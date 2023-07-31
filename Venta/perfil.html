@@ -16,8 +16,9 @@
         <div class="profile">
           <div class="container">
             <img id="image" src="../imagenSatur/Logo_Satur.png" >
+            <input id="inimg" type="file">
           </div>
-          <input id="inimg" type="file">
+          
             <div class="profile-info">
                 <h1>John Doe</h1>
                 <p>Nombre Y Apellido : John Doe</p>
@@ -35,11 +36,16 @@
         </div>
     </div>
     <script>
-      var file = document.getElementById("inimg")
-      var file = document.getElementById("image")
-      file.addEventListener("change", (e)=>{
+      try{
+        var file = document.getElementById("inimg")
+        var file = document.getElementById("image")
+        file.addEventListener("change", (e)=>{
         img.src = URL.createObjectURL(e.target.files[e])
       })
+      }catch(i){
+        console.error(i);
+      }
+      
     </script>
 </body>
 </html>

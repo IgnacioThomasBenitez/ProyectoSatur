@@ -1,2 +1,2 @@
 # ProyectoSatur
-solo los del grupo
+Solo los del grupo
