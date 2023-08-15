@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
 }
 
 body::-webkit-scrollbar{
-    width: 1%;
+    width: 10%;
 }
 
 ul {

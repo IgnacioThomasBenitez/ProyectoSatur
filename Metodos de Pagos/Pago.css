@@ -1,6 +1,6 @@
 body{
     background: rgb(20, 9, 233);
-    background: linear-gradient(90deg,rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg,rgba(0,212,255,1) 10%, rgba(9,9,121,1) 35%);
 }
 
 body::-webkit-scrollbar{
