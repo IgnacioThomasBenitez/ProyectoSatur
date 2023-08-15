@@ -6,27 +6,62 @@
     <link rel="shortcut icon" href="../imagenSatur/satur.jpg" type="image/x-icon">
     <title>Metodos de Pago</title>
     <link rel="stylesheet" href="Pago.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="cards">
-        <div class="card">
-            <img  src="../Metodos de Pagos/imagenes/billeteravirtual.png" alt="">
-            <h4>BILLETERA VIRTUAL</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button href="#">PAGAR</button>
+    <div class="container">
+        <div class="title">
+            <h4>Seleccione un método de pago</h4>
         </div>
-        <div class="card">
-            <img src="../Metodos de Pagos/imagenes/tarjetavirtual.png" alt="">
-            <h4>TRANSFERENCIA BANCARIA</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button href="#">PAGAR</button>
-        </div>
-        <div class="card">
-            <img src="./imagenes/efectivo.png" alt="">
-            <h4>EFECTIVO</h4>
-            <p>Te puedes acercar a retirar tu producto y pagarlo en nuestra Sucursal</p>
-            <button href="#">PAGAR</button>
-        </div>
+
+        <form action="#">
+            <input type="radio" name="payment" id="visa">
+            <input type="radio" name="payment" id="mastercard">
+            <input type="radio" name="payment" id="paypal">
+            <input type="radio" name="payment" id="AMEX">
+
+            <div class="category">
+                <label for="visa" class="visaMethod">
+                    <div class="imgName">
+                        <div class="imgContainer visa">
+                            <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="">
+                        </div>
+                        <span class="name">VISA</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="mastercard" class="mastercardMethod">
+                    <div class="imgName">
+                        <div class="imgContainer mastercard">
+                            <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="">
+                        </div>
+                        <span class="name">Mastercard</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="paypal" class="paypalMethod">
+                    <div class="imgName">
+                        <div class="imgContainer paypal">
+                            <img src="https://i.ibb.co/KVF3mr1/paypal.png" alt="">
+                        </div>
+                        <span class="name">Paypal</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="AMEX" class="amexMethod">
+                    <div class="imgName">
+                        <div class="imgContainer AMEX">
+                            <img src="https://i.ibb.co/wQnrX86/American-Express.jpg" alt="">
+                        </div>
+                        <span class="name">AMEX</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+            </div>
+        </form>
     </div>
 </body>
 </html>
