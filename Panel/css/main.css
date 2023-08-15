@@ -5,7 +5,7 @@
     --clr-dark: #27292b;
     --clr-light: #f5f5f5;
     --box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    --box-shadow-expand: 0 0 15px rgba(0, 0, 0, .3);
+    --box-shadow-expand: 0 0 15px rgba(20, 64, 185, 0.3);
     font-family: 'Poppins', sans-serif;
 }
 

@@ -180,10 +180,4 @@ body {
   color: var(--title);
 }
 
-.container-projetos a:hover {
-  color: var(--purple);
-}
 
-.container-projetos li:hover {
-  color: var(--purple);
-}
