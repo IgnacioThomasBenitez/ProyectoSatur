@@ -25,7 +25,7 @@
     </header>
     <main>
         <div class="main-grid">
-            <a href="#" class="grid-item">
+             <a  href="#" class="grid-item" > <!-- type="text" name="" id="caja" disabled=""--> <!-- <input type="button" name="" value="activar caja" onclick="activarcaja()"> -->
                 <i class="bi bi-cloud-upload"></i>
                 <p>Agregar un producto</p>
             </a>
@@ -55,6 +55,11 @@
             </a>
         </div>
     </main>
+    <script type="text/javascript">
+        function activarcaja(){
+            document.getElementById(`caja`).disabled=false
+        }
+    </script>
     
     <script src="./js/main.js"></script>
 </body>
