@@ -279,6 +279,46 @@
         "precio": 1000
     },
     {
+        "id": "ADAP-01",
+        "titulo": "UDAPTADOR",
+        "imagen": "../Venta/img/Adaptadores/DVI-HDMI1.webp",
+        "categoria": {
+            "nombre": "UDAPTADORES",
+            "id": "ADAP"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "ADAP-02",
+        "titulo": "UDAPTADOR",
+        "imagen": "../Venta/img/Adaptadores/DVI-HDMI2.webp",
+        "categoria": {
+            "nombre": "UDAPTADORES",
+            "id": "ADAP"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "ADAP-03",
+        "titulo": "UDAPTADOR",
+        "imagen": "../Venta/img/Adaptadores/DVI-VGA2.webp",
+        "categoria": {
+            "nombre": "UDAPTADORES",
+            "id": "ADAP"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "ADAP-04",
+        "titulo": "UDAPTADOR",
+        "imagen": "../Venta/img/Adaptadores/DVI-VGAdoble3.webp",
+        "categoria": {
+            "nombre": "UDAPTADORES",
+            "id": "ADAP"
+        },
+        "precio": 1000
+    },
+    {
         "id": "USB-01",
         "titulo": "USB",
         "imagen": "../Venta/img/USBs/USB-1.jpg",
@@ -317,5 +357,46 @@
             "id": "USB"
         },
         "precio": 1000
-    }           
+    },
+    {
+        "id": "PARLANTE-01",
+        "titulo": "PARLANTE",
+        "imagen": "../Venta/img/Parlantes/parlante1.webp",
+        "categoria": {
+            "nombre": "PARLANTE",
+            "id": "PARLANTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "PARLANTE-02",
+        "titulo": "PARLANTE",
+        "imagen": "../Venta/img/Parlantes/parlante2.webp",
+        "categoria": {
+            "nombre": "PARLANTE",
+            "id": "PARLANTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "PARLANTE-03",
+        "titulo": "PARLANTE",
+        "imagen": "../Venta/img/Parlantes/parlante3.webp",
+        "categoria": {
+            "nombre": "PARLANTE",
+            "id": "PARLANTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "PARLANTE-04",
+        "titulo": "PARLANTE",
+        "imagen": "../Venta/img/Parlantes/parlante4.webp",
+        "categoria": {
+            "nombre": "PARLANTE",
+            "id": "PARLANTE"
+        },
+        "precio": 1000
+    }
+
 ]
