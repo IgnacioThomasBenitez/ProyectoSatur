@@ -9,6 +9,19 @@ body{
   background: rgb(20, 9, 233);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
+.a {
+  text-decoration: none; /* Elimina la subrayado predeterminado */
+  color: #007bff; /* Cambia el color del texto del enlace */
+}
+
+.a:hover {
+  text-decoration: underline; /* Agrega subrayado al pasar el cursor sobre el enlace */
+}
+
+.a:visited {
+  color: rgb(128, 0, 0); /* Cambia el color del enlace visitado */
+}
+
 .login-page {
   width: 400px;
   padding: 8% 0 0;
