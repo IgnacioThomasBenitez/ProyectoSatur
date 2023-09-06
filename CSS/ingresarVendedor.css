@@ -12,6 +12,7 @@ body{
 .a {
   text-decoration: none; /* Elimina la subrayado predeterminado */
   color: #007bff; /* Cambia el color del texto del enlace */
+  outline: none;
 }
 
 .a:hover {
@@ -19,7 +20,7 @@ body{
 }
 
 .a:visited {
-  color: rgb(248, 242, 242); /* Cambia el color del enlace visitado */
+  color: rgba(236, 234, 234, 0.712); /* Cambia el color del enlace visitado */
 }
 
 .login-page {
@@ -39,19 +40,34 @@ body{
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(247, 246, 246, 0.6);
+  box-shadow: 0 15px 25px rgba(235, 230, 230, 0.6);
   border-radius: 10px;
 }
 .form input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 13px;
-  color: #fff;
-  margin-bottom: 30px;
-  border-radius: 7px;
-  background: transparent;
+ width: 100%;
+ padding: 10px 0;
+ font-size: 13px;
+ color: #fff;
+ margin-bottom: 30px;
+ border-radius: 7px;
+ background: transparent;
   
 }
+
+	/* --------------------------------------- */
+	/* ----- Radio Button */
+	/* --------------------------------------- */
+input[type="radio"]{
+		display: none
+		&:checked + label:before 
+			display: none
+		&:checked + label 
+			padding: 5px 15px 
+			background: $primario
+			border-radius: 2px
+			color: #fff
+}
+
 h2{
  color:white;
 }

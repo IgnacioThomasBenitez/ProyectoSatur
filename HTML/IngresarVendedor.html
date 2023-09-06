@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satur</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/ingresarVendedor.css">
 	<link rel="shortcut icon" href="/imagenSatur/satur.jpg" type="image/x-icon">
 </head>
 <body style="display:flex; align-items:center; justify-content:center;">
   <div class="form">
-    <a href="../HTML/Ingresar.html" class="a">Volver</a>
+    <a href="../HTML/Inicio.html" class="a">VOLVER</a>
     <form class="register-form" method="POST">
       <h2>Registro</h2>
-      <input type="text" placeholder="Nombre Completo" required/>
-      <input type="text" placeholder="Usuario" required/>
-      <input type="email" placeholder="Email" required/>
-      <input type="password" placeholder="Contraseña" required/>
+      <input type="text" placeholder="Nombre del Local" required/>
+      <div style="display:flex; gap:7px;" >
+        <input type="email" placeholder="Email" required/>
+        <input type="text" placeholder="Direccion" required/>
+      </div>
+      <input type="text" placeholder="Telefono" required/>
+      <div style="display:flex; gap:7px;">
+        <input type="text" placeholder="DNI" required/>
+        <input type="password" placeholder="Contraseña" required/>
+      </div>
+      <div style="display: flex;">
+        <input  placeholder="Soporte Tecnico" required/>
+        <select name="Soporte" id="" style="width: 60px ;height:35px; border-radius:10px;">
+          <option value="Si">Si</option>
+          <option value ="No">No</option>
+        </select>
+        
+      </div>
       <a class="btn" href="#">
         <span></span>
         <span></span>
@@ -30,6 +44,8 @@
       <h2></i>Inicio de Sesion </h2>
       <input type="text" placeholder="Usuario" required />
       <input type="password" placeholder="Contraseña" required/>
+      <input type="password" placeholder="Clave" required/>
+      
       <a class="btn" href="#">
         <span></span>
         <span></span>

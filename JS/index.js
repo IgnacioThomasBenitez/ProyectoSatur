@@ -10,3 +10,7 @@ document.addEventListener('click', e => {
     }
 });
 
+document.getElementById('ini').addEventListener('click', function() {
+    window.location.href = '../HTML/Ingresar.html';
+});
+

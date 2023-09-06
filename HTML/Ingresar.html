@@ -1,94 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="../imagenSatur/satur.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <title>SATUR</title>
+    <title>Satur</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+	<link rel="shortcut icon" href="/imagenSatur/satur.jpg" type="image/x-icon">
 </head>
-
-<body>
-    <div class="container-form sign-up">
-        <div class="welcome-back">
-            <div class="message">
-                <img class="satur" src="../imagenSatur/Logo_Satur.png" alt="">
-                <h2>Bienvenido a Satur</h2>
-                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
-                <button class="sign-up-btn">Iniciar Sesion</button>
-                <div>
-                    <button class="sign-upv-btn" id="loginButton">Iniciar Sesion o Registrate como Vendedor</button>
-                </div>
-                <div><button class="sign-up-btn" id="pag">Pagina Principal</button></div>
-            </div>
-        </div>
-        <form class="formulario">
-            <h2 class="create-account">Crear una cuenta</h2>
-            <div class="iconos">
-                <div class="border-icon">
-                    <i class='bx bxl-instagram'></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-facebook-circle' ></i>
-                </div>
-            </div>
-            <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
-            <div class="contra">
-                <input type="password" id="pass" placeholder="Contraseña">
-                <input type="checkbox" id="check">
-            </div>
-            <input type="password" id="pass" placeholder="Repita su Contraseña"> 
-            <input type="button" value="Registrarse">
-        </form>
-    </div>
-    <script>
-        check.onclick = togglePassword;
-        function togglePassword() {
-            if (check.checked) pass.type = "text";
-            else pass.type = "password";
-        }
-    </script>
-    <div class="container-form sign-in">
-        <form class="formulario">
-            <h2 class="create-account">Iniciar Sesion</h2>
-            <div class="iconos">
-                <div class="border-icon">
-                    <i class='bx bxl-instagram'></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-facebook-circle' ></i>
-                </div>
-            </div>
-            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-            <input  type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="button" value="Iniciar Sesion">
-        </form>
-        <div class="welcome-back">
-            <div class="message">
-                <img class="satur" src="../imagenSatur/Logo_Satur.png" alt="">
-                <h2>Bienvenido de nuevo</h2>
-                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
-                <button class="sign-in-btn">Registrarse</button>
-            </div>
-        </div>
-    </div>
-    <script src="../JS/index.js"></script>
-    <script src="../JS/login.js"></script>
+<body style="display:flex; align-items:center; justify-content:center;">
+  <div class="form">
+    <a href="../HTML/Inicio.html" class="a">VOLVER</a>
+    <form class="register-form" method="POST">
+      <h2>Registro</h2>
+      <div style="display:flex; gap:7px;">
+        <input type="text" placeholder="Nombre" required/>
+        <input type="text" placeholder="Apellido" required/>
+      </div>
+      <div style="display:flex; gap:7px;">
+        <input type="text" placeholder="Fecha de Nacimiento" required/>
+        <input type="text" placeholder="DNI" required/>
+      </div>
+      <input type="email" placeholder="Email" required/>
+      <input type="text" placeholder="Telefono" required/>
+      <div style="display:flex; gap:7px;">
+        <input type="text" placeholder="Usuario" required/>
+        <input type="password" placeholder="Contraseña" required/>
+      </div>
+      <a class="btn" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Crear
+      </a>
+      <p class="message">¿Ya registrado?<a href="#"> Iniciar Sesion</a></p>
+    </form>
+    <form class="login-form" method="post">
+      <h2></i>Inicio de Sesion </h2>
+      <input type="text" placeholder="Usuario" required />
+      <input type="password" placeholder="Contraseña" required/>
+      <a class="btn" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Iniciar Sesion
+      </a>
+      <p class="message">¿No registrado? <a href="#"> Crea tu Cuenta </a></p>
+    </form>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/JS/IngresarVendedor.js"></script>
+<script src="/JS/volver.js"></script>
 </body>
-
 </html>
+
