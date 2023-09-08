@@ -101,7 +101,7 @@ h2{
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #289bb8);
+  background: linear-gradient(90deg, transparent, #24b443);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -119,7 +119,7 @@ h2{
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #289bb8);
+  background: linear-gradient(180deg, transparent, #28b83b);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -138,7 +138,7 @@ h2{
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #289bb8);
+  background: linear-gradient(270deg, transparent, #28b82f);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -157,7 +157,7 @@ h2{
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #289bb8);
+  background: linear-gradient(360deg, transparent, #28b83b);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }

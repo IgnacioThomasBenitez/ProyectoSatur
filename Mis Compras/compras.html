@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compras.css">
+    <link rel="stylesheet" href="busqueda.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Mis Compras</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Mis Compras</h1>
+                
+            </header>
+           <nav>
+                <ul class="menu">
+                        <li>
+                            <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill">
+                            </i>Todos los productos </button>
+                        </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">
+                    <nav class="nav">
+                        <ul class="nav__links">
+                          <li class="nav__link active">
+                            <a href="../HTML/Inicio.html"><i class="bi bi-house-fill"></i></a>
+                          </li>
+                          <li class="nav__link active">
+                            <a href="#"><i class="bi bi-filter"></i></a>
+                          </li>
+                          <li class="nav__link active">
+                            <a href="../Panel/index.html"><i class="bi bi-person-workspace"></i></a>
+                          </li>
+                        </ul>
+                    </nav>
+                </p>
+            </footer>
+            
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">
+                <div class="buscar">
+                    <input type="text" placeholder="Buscar" required />
+                    <div class="btn">
+                      <i class="fas fa-search icon"></i>
+                    </div>
+                </div>
+            </h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <div class="container">
+                    <div class="productos">
+                        <li>
+                            <button id="IMPRESORAS" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>IMPRESORAS</button>
+                        </li> 
+                    </div>
+                    <div class="productos">
+                        <li>
+                            <button id="PROCER" class="boton-menu boton-categoria">
+                                <i class="bi bi-hand-index-thumb"></i>PROCESADOR</button>
+                        </li>
+                    </div>
+                    <div class="productos">
+                        <li>
+                            <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill">
+                            </i>RAM</button>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js" type="text/javascript" ></script>
+    <script src="../Venta/main.js"></script>
+    <script src="../Venta/menu.js"></script>
+</body>
+</html>

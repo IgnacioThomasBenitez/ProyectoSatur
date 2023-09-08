@@ -23,13 +23,15 @@
         <input type="text" placeholder="DNI" required/>
         <input type="password" placeholder="Contraseña" required/>
       </div>
-      <div style="display: flex;">
-        <input  placeholder="Soporte Tecnico" required/>
-        <select name="Soporte" id="" style="width: 60px ;height:35px; border-radius:10px;">
-          <option value="Si">Si</option>
-          <option value ="No">No</option>
-        </select>
-        
+      <div style="display: flex; margin-top:-14px; gap:23px;"> 
+        <h4 style="color: #fcfbfb3f;">Tiene Soporte Tecnico?</h4>
+        <div style="display: flex; gap:5px; margin-top:14px;">
+          <label for="Si" style="color: #fcfbfb75; margin-top:7px;">Si</label>
+          <input type="radio" style="height: 25px;">
+
+          <label for="No" style="color: #fcfbfb79; margin-top:7px;">No</label>
+          <input type="radio" style="height: 25px;">
+        </div>
       </div>
       <a class="btn" href="#">
         <span></span>
@@ -38,13 +40,13 @@
         <span></span>
         Crear
       </a>
+      <p class="message">Al Registrase aceptas nuestros terminos y condiciones</p>
       <p class="message">¿Ya registrado?<a href="#">Iniciar Sesion</a></p>
     </form>
     <form class="login-form" method="post">
       <h2></i>Inicio de Sesion </h2>
       <input type="text" placeholder="Usuario" required />
       <input type="password" placeholder="Contraseña" required/>
-      <input type="password" placeholder="Clave" required/>
       
       <a class="btn" href="#">
         <span></span>
@@ -53,6 +55,7 @@
         <span></span>
         Iniciar Sesion
       </a>
+      <p class="message">Al Iniciar aceptas nuestros terminos y condiciones</p>
       <p class="message">¿No registrado? <a href="#"> Crea tu Cuenta </a></p>
     </form>
   </div>
