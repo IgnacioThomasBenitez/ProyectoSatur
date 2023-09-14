@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #6540fa;
+    --clr-main: #208cd4;
     --clr-main-light: rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
@@ -183,7 +183,6 @@ main {
     color: var(--clr-white);
     padding: .5rem;
     border-radius: 1rem;
-    margin-top: -2rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -210,8 +209,6 @@ main {
     background-color: var(--clr-main);
     color: var(--clr-white);
 }
-
-
 .header-mobile {
     display: none;
 }

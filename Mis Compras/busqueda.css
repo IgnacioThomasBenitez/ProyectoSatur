@@ -13,19 +13,6 @@
 	border: 1px solid silver;
 	border-radius: 30px;
 }
-  
-.btn {
-	width: 55px;
-	height: 55px;
-	top: 0;
-	right: 0;
-	position: absolute;
-	background: #440088;
-	text-align: center;
-	color: white;
-	font-size: 18px;
-	border-radius: 50%;
-}
 
 @media screen and (max-width: 850px)  {
 	
