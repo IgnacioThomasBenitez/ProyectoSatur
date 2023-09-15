@@ -142,7 +142,6 @@ body {
   color: var(--purple);
   transition: color 0.2s;
 }
-
 .link-icon:hover {
   color: var(--orange);
 }
