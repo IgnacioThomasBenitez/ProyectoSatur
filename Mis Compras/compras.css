@@ -166,8 +166,7 @@ main {
 }
 
 .contenedor-productos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 1rem;
 }
 
@@ -222,25 +221,8 @@ main {
 }
 
 .container {
-    height: 350px;
-    overflow: scroll;
-    background-color: transparent;
+    gap: 2rem;
 }
-  
-.container::-webkit-scrollbar {
-    width: 8px;
-}
-  
-.container::-webkit-scrollbar-thumb {
-    background-color: #f6f5f8;
-    border-radius: 4px;
-}
-  
-.container::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-  
-  
 
 /*** MEDIA QUERIES ***/
 
