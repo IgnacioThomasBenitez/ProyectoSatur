@@ -17,7 +17,7 @@
             "nombre": "IMPRESORAS",
             "id": "IMPRESORAS"
         },
-        "precio": 1000
+        "precio": 2000
     },
     {
         "id": "IMPRESORAS-03",
@@ -27,7 +27,7 @@
             "nombre": "IMPRESORAS",
             "id": "IMPRESORAS"
         },
-        "precio": 1000
+        "precio": 3000
     },
     {
         "id": "IMPRESORAS-04",
@@ -37,7 +37,7 @@
             "nombre": "IMPRESORAS",
             "id": "IMPRESORAS"
         },
-        "precio": 1000
+        "precio": 4000
     },
     {
         "id": "RAM-01",
@@ -47,7 +47,7 @@
             "nombre": "RAM",
             "id": "RAM"
         },
-        "precio": 1000
+        "precio": 5000
     },
     {
         "id": "RAM-02",
@@ -57,7 +57,7 @@
             "nombre": "RAM",
             "id": "RAM"
         },
-        "precio": 1000
+        "precio": 6000
     },
     {
         "id": "RAM-03",
@@ -67,7 +67,7 @@
             "nombre": "RAM",
             "id": "RAM"
         },
-        "precio": 1000
+        "precio": 7000
     },
     {
         "id": "RAM-04",
@@ -77,7 +77,47 @@
             "nombre": "RAM",
             "id": "RAM"
         },
-        "precio": 1000
+        "precio": 8000
+    },
+    {
+        "id": "PROCER-01",
+        "titulo": "PROCESADOR",
+        "imagen": "../Venta/img/Procesadores/1.webp",
+        "categoria": {
+            "nombre": "PROCESADOR",
+            "id": "PROCER"
+        },
+        "precio": 8000
+    },
+    {
+        "id": "PROCER-02",
+        "titulo": "PROCESADOR",
+        "imagen": "../Venta/img/Procesadores/2.webp",
+        "categoria": {
+            "nombre": "PROCESADOR",
+            "id": "PROCER"
+        },
+        "precio": 8000
+    },
+    {
+        "id": "PROCER-03",
+        "titulo": "PROCESADOR",
+        "imagen": "../Venta/img/Procesadores/3.webp",
+        "categoria": {
+            "nombre": "PROCESADOR",
+            "id": "PROCER"
+        },
+        "precio": 8000
+    },
+    {
+        "id": "PROCER-04",
+        "titulo": "PROCESADOR",
+        "imagen": "../Venta/img/Procesadores/4.webp",
+        "categoria": {
+            "nombre": "PROCESADOR",
+            "id": "PROCER"
+        },
+        "precio": 8000
     },
     {
         "id": "PLACA-01",
@@ -87,7 +127,7 @@
             "nombre": "PLACA",
             "id": "PLACA"
         },
-        "precio": 1000
+        "precio": 9000
     },
     {
         "id": "PLACA-02",
@@ -97,7 +137,7 @@
             "nombre": "PLACA",
             "id": "PLACA"
         },
-        "precio": 1000
+        "precio": 10000
     },
     {
         "id": "PLACA-03",
@@ -107,7 +147,7 @@
             "nombre": "PLACA",
             "id": "PLACA"
         },
-        "precio": 1000
+        "precio": 11000
     },
     {
         "id": "PLACA-04",
@@ -117,7 +157,7 @@
             "nombre": "PLACA",
             "id": "PLACA"
         },
-        "precio": 1000
+        "precio": 12000
     },
     {
         "id": "SSD-01",
@@ -127,7 +167,7 @@
             "nombre": "SSD",
             "id": "SSD"
         },
-        "precio": 1000
+        "precio": 13000
     },
     {
         "id": "SSD-02",
@@ -137,7 +177,7 @@
             "nombre": "SSD",
             "id": "SSD"
         },
-        "precio": 1000
+        "precio": 14000
     },
     {
         "id": "SSD-03",
@@ -147,7 +187,7 @@
             "nombre": "SSD",
             "id": "SSD"
         },
-        "precio": 1000
+        "precio": 15000
     },
     {
         "id": "SSD-04",
@@ -157,7 +197,7 @@
             "nombre": "SSD",
             "id": "SSD"
         },
-        "precio": 1000
+        "precio": 16000
     },
     {
         "id": "VIDEO-04",
@@ -167,7 +207,7 @@
             "nombre": "PLACA DE VIDEO",
             "id": "VIDEO"
         },
-        "precio": 1000
+        "precio": 17000
     },
     {
         "id": "VIDEO-04",
@@ -177,7 +217,7 @@
             "nombre": "PLACA DE VIDEO",
             "id": "VIDEO"
         },
-        "precio": 1000
+        "precio": 18000
     },{
         "id": "VIDEO-04",
         "titulo": "PLACAVIDEO",
@@ -186,7 +226,7 @@
             "nombre": "PLACA DE VIDEO",
             "id": "VIDEO"
         },
-        "precio": 1000
+        "precio": 19000
     },
     {
         "id": "VIDEO-04",
@@ -196,7 +236,7 @@
             "nombre": "PLACA DE VIDEO",
             "id": "VIDEO"
         },
-        "precio": 1000
+        "precio": 20000
     },  
     {
         "id": "FUENTES-01",

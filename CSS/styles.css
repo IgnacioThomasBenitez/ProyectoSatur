@@ -84,7 +84,7 @@ h2{
 .btn:hover {
   background: #289bb8;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 5px #289bb8,
               0 0 25px #289bb8,
               0 0 50px #289bb8,
