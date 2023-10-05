@@ -1,0 +1,32 @@
+.input-group {
+	width: 30%;
+    height: 100%;
+    background-color: #fff5;
+    padding: 0 .8rem;
+    border-radius: 2rem;
+	margin-left: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
+}
+
+.input-group:hover {
+    width: 35%;
+    background-color: #fff8;
+    box-shadow: 0 .1rergba(196, 84, 84, 0.533)em #0002;
+}
+
+.input-group img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.input-group input {
+    width: 100%;
+    padding: 0 .5rem 0 .3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}

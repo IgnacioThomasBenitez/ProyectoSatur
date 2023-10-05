@@ -299,6 +299,16 @@ main {
     border-bottom-right-radius: 1rem;
 }
 
+.pagar {
+    margin-left: 45%;
+    background-color: var(--clr-main);
+    padding: 1rem 1rem;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
 .header-mobile {
     display: none;
 }

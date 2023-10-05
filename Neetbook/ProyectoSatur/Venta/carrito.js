@@ -108,7 +108,7 @@ botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {
 
     Swal.fire({
-        title: '¿Estás seguro?',
+        title: '¿Seguro de Eliminar?',
         icon: 'question',
         html: `Se van a borrar ${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos.`,
         showCancelButton: true,
