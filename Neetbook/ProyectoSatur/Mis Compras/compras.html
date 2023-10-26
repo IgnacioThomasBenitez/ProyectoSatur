@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="compras.css">
     <link rel="stylesheet" href="cajas.css">
     <link rel="stylesheet" href="../Venta/barra.css">
-    <link rel="stylesheet" href="../Venta/busqueda.css">
+    <link rel="stylesheet" href="../Venta/footer.css">
+    <link rel="stylesheet" href="busqueda.css">
      <!-- BOXICONS -->
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,8 +44,20 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill">
+                        <button id="Compras" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill">
                         </i>Mi Compras</button>
+                    </li>
+                    <li>
+                        <button id="Perfil" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill">
+                        </i>Perfil / Gestion</button>
+                    </li>
+                    <li>
+                        <button id="Pago" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill">
+                        </i>Metodos de Pago</button>
+                    </li>
+                    <li>
+                        <button id="Envio" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill">
+                        </i>Metodos de Envio</button>
                     </li>
                 </ul>
             </nav>
@@ -71,9 +84,6 @@
             <h2 class="titulo-principal" id="titulo-principal">Todas mis Compras
                 <div class="buscar">
                     <input type="text" placeholder="Buscar" required />
-                    <div class="btn">
-                      <i class="fas fa-search icon"></i>
-                    </div>
                 </div>
             </h2>
             <div id="contenedor-productos" class="contenedor-productos">
@@ -109,5 +119,6 @@
     <script src="../Venta/main.js"></script>
     <script src="../Venta/menu.js"></script>
     <script src="../Venta/barra.js"></script>
+    <script src="../JS/scrips.js"></script>
 </body>
 </html>

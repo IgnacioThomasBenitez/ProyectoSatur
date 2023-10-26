@@ -11,6 +11,7 @@ fetch("productos.json")
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
+console.log(tituloPrincipal)
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 
@@ -112,9 +113,14 @@ botonesCategorias.forEach(boton => {
 
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
+        console.log(e)
 
         if (e.currentTarget.id != "todos") {
+
+            console.log(e.currentTarget.id)
+
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            console.log(productoCategoria.categoria.nombre)
             tituloPrincipal.innerText = productoCategoria.categoria.nombre;
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(productosBoton);

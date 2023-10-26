@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #ddeefc;
+	background: #231169;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -50,7 +50,7 @@ body {
 
 .tarjeta .delantera {
 	width: 100%;
-	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+	background: url(../img/bg-tarjeta/bg-tarjeta-03.jpg);
 	background-size: cover;
 }
 

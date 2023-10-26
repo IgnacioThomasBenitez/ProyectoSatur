@@ -8,15 +8,8 @@
     --clr-main: #231169;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 .container{
-    width: 400px;
+    width: 100%;
     border-radius: 8px;
     padding: 40px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
