@@ -1,0 +1,61 @@
+
+/*===== Header =====*/
+
+.perfil{
+  margin-left: 40%;
+}
+.perfil > img {
+  max-width: 10rem;
+  max-height: 10rem;
+  border-radius: 50%;
+}
+
+.title {
+  margin-left: 1rem;
+}
+
+.title h1 {
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+
+/*===== Datos =====*/
+
+.container-projetos {
+  padding: 2.1rem ;
+  margin-top: 20%;
+  width: 100%;
+  margin-left: -55%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+  border-radius: 3rem;
+}
+
+.datos{
+  display: flex;
+  justify-content: space-between;
+  padding: 2.1rem ;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+  border-radius: 3rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.div {
+  gap: 1rem;
+}
+
+.container-projetos h3 {
+  display: flex;
+  color: #2225d1;
+  gap: 1rem;
+}
+p{
+  color: #000;
+}
+
+.container-projetos a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+
