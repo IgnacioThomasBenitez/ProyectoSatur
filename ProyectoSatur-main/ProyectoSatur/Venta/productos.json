@@ -1,0 +1,446 @@
+[
+    {
+        "id": "IMPRESORAS-01",
+        "titulo": "IMPRESORA 3D",
+        "descripcion":"impresoras", 
+        "imagen": "../Venta/img/impresoras/1.jpg",
+        "categoria": {
+            "nombre": "IMPRESORAS",
+            "id": "IMPRESORAS"
+        },
+        "precio":1000
+    },
+    {
+        "id": "IMPRESORAS-02",
+        "titulo": "IMPRESORA 3D",
+        "descripcion":"impresoras", 
+        "imagen": "../Venta/img/impresoras/2.png",
+        "categoria": {
+            "nombre": "IMPRESORAS",
+            "id": "IMPRESORAS"
+        },
+        "precio": 2000
+    },
+    {
+        "id": "IMPRESORAS-03",
+        "titulo": "IMPRESORA",
+        "descripcion":"impresoras", 
+        "imagen": "../Venta/img/impresoras/3.jpg",
+        "categoria": {
+            "nombre": "IMPRESORAS",
+            "id": "IMPRESORAS"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "IMPRESORAS-04",
+        "titulo": "IMPRESORA",
+        "descripcion":"impresoras", 
+        "imagen": "../Venta/img/impresoras/4.jpg",
+        "categoria": {
+            "nombre": "IMPRESORAS",
+            "id": "IMPRESORAS"
+        },
+        "precio": 4000
+    },
+    {
+        "id": "RAM-01",
+        "titulo": "RAM",
+        "imagen": "../Venta/img/Ram/ram-1.jpg",
+        "categoria": {
+            "nombre": "RAM",
+            "id": "RAM"
+        },
+        "precio": 5000
+    },
+    {
+        "id": "RAM-02",
+        "titulo": "RAM",
+        "imagen": "../Venta//img/Ram/ram-2.jpg",
+        "categoria": {
+            "nombre": "RAM",
+            "id": "RAM"
+        },
+        "precio": 6000
+    },
+    {
+        "id": "RAM-03",
+        "titulo": "RAM",
+        "imagen": "../Venta/img/Ram/ram-3.png",
+        "categoria": {
+            "nombre": "RAM",
+            "id": "RAM"
+        },
+        "precio": 7000
+    },
+    {
+        "id": "RAM-04",
+        "titulo": "RAM",
+        "imagen": "../Venta/img/Ram/ram-4.jpg",
+        "categoria": {
+            "nombre": "RAM",
+            "id": "RAM"
+        },
+        "precio": 8000
+    },
+    {
+        "id": "PROCER-01",
+        "titulo": "PROCESADOR",
+        "imagen": "../Venta/img/Procesadores/1.webp",
+        "categoria": {
+            "nombre": "PROCESADOR",
+            "id": "PROCER"
+        },
+        "precio": 8000
+    },
+    {
+        "id": "PROCER-02",
+        "titulo": "PROCESADOR",
+        "imagen": "../Venta/img/Procesadores/2.webp",
+        "categoria": {
+            "nombre": "PROCESADOR",
+            "id": "PROCER"
+        },
+        "precio": 8000
+    },
+    {
+        "id": "PROCER-03",
+        "titulo": "PROCESADOR",
+        "imagen": "../Venta/img/Procesadores/3.webp",
+        "categoria": {
+            "nombre": "PROCESADOR",
+            "id": "PROCER"
+        },
+        "precio": 8000
+    },
+    {
+        "id": "PROCER-04",
+        "titulo": "PROCESADOR",
+        "imagen": "../Venta/img/Procesadores/4.webp",
+        "categoria": {
+            "nombre": "PROCESADOR",
+            "id": "PROCER"
+        },
+        "precio": 8000
+    },
+    {
+        "id": "PLACA-01",
+        "titulo": "PLACA",
+        "imagen": "../Venta/img/Placa/placa-1.png",
+        "categoria": {
+            "nombre": "PLACA",
+            "id": "PLACA"
+        },
+        "precio": 9000
+    },
+    {
+        "id": "PLACA-02",
+        "titulo": "PLACA",
+        "imagen": "../Venta/img/Placa/placa-2.jpg",
+        "categoria": {
+            "nombre": "PLACA",
+            "id": "PLACA"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "PLACA-03",
+        "titulo": "PLACA",
+        "imagen": "../Venta/img/Placa/placa-3.webp",
+        "categoria": {
+            "nombre": "PLACA",
+            "id": "PLACA"
+        },
+        "precio": 11000
+    },
+    {
+        "id": "PLACA-04",
+        "titulo": "PLACA",
+        "imagen": "../Venta/img/Placa/placa-4.jpg",
+        "categoria": {
+            "nombre": "PLACA",
+            "id": "PLACA"
+        },
+        "precio": 12000
+    },
+    {
+        "id": "SSD-01",
+        "titulo": "SSD",
+        "imagen": "../Venta/img/SSD/ssd-1.png",
+        "categoria": {
+            "nombre": "SSD",
+            "id": "SSD"
+        },
+        "precio": 13000
+    },
+    {
+        "id": "SSD-02",
+        "titulo": "SSD",
+        "imagen": "../Venta/img/SSD/ssd-2.webp",
+        "categoria": {
+            "nombre": "SSD",
+            "id": "SSD"
+        },
+        "precio": 14000
+    },
+    {
+        "id": "SSD-03",
+        "titulo": "SSD",
+        "imagen": "../Venta/img/SSD/ssd-3.jpg",
+        "categoria": {
+            "nombre": "SSD",
+            "id": "SSD"
+        },
+        "precio": 15000
+    },
+    {
+        "id": "SSD-04",
+        "titulo": "SSD",
+        "imagen": "../Venta/img/SSD/ssd-4.jpg",
+        "categoria": {
+            "nombre": "SSD",
+            "id": "SSD"
+        },
+        "precio": 16000
+    },
+    {
+        "id": "VIDEO-04",
+        "titulo": "PLACAVIDEO",
+        "imagen": "../Venta/img/VideoPlaca/video-1.jpg",
+        "categoria": {
+            "nombre": "PLACA DE VIDEO",
+            "id": "VIDEO"
+        },
+        "precio": 17000
+    },
+    {
+        "id": "VIDEO-04",
+        "titulo": "PLACAVIDEO",
+        "imagen": "../Venta/img/VideoPlaca/video-2.jpg",
+        "categoria": {
+            "nombre": "PLACA DE VIDEO",
+            "id": "VIDEO"
+        },
+        "precio": 18000
+    },{
+        "id": "VIDEO-04",
+        "titulo": "PLACAVIDEO",
+        "imagen": "../Venta/img/VideoPlaca/video-3.webp",
+        "categoria": {
+            "nombre": "PLACA DE VIDEO",
+            "id": "VIDEO"
+        },
+        "precio": 19000
+    },
+    {
+        "id": "VIDEO-04",
+        "titulo": "PLACAVIDEO",
+        "imagen": "../Venta/img/VideoPlaca/video-4.png",
+        "categoria": {
+            "nombre": "PLACA DE VIDEO",
+            "id": "VIDEO"
+        },
+        "precio": 20000
+    },  
+    {
+        "id": "FUENTES-01",
+        "titulo": "FUENTE",
+        "imagen": "../Venta/img/Fuentes/fuente-1.jpg",
+        "categoria": {
+            "nombre": "FUENTE",
+            "id": "FUENTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "FUENTES-02",
+        "titulo": "FUENTE",
+        "imagen": "../Venta/img/Fuentes/fuente-2.jpg",
+        "categoria": {
+            "nombre": "FUENTE",
+            "id": "FUENTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "FUENTES-03",
+        "titulo": "FUENTE",
+        "imagen": "../Venta/img/Fuentes/fuente-3.webp",
+        "categoria": {
+            "nombre": "FUENTE",
+            "id": "FUENTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "FUENTES-04",
+        "titulo": "FUENTE",
+        "imagen": "../Venta/img/Fuentes/fuente-5.jpg",
+        "categoria": {
+            "nombre": "FUENTE",
+            "id": "FUENTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "GABINETES-01",
+        "titulo": "GABINETE",
+        "imagen": "../Venta/img/Gabinetes/gabinete-1.jpg",
+        "categoria": {
+            "nombre": "GABINETE",
+            "id": "GABINETES"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "GABINETES-02",
+        "titulo": "GABINETE",
+        "imagen": "../Venta/img/Gabinetes/gabinete-2.jpeg",
+        "categoria": {
+            "nombre": "GABINETE",
+            "id": "GABINETES"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "GABINETES-03",
+        "titulo": "GABINETE",
+        "imagen": "../Venta/img/Gabinetes/gabinete-3.jpeg",
+        "categoria": {
+            "nombre": "GABINETE",
+            "id": "GABINETES"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "GABINETES-04",
+        "titulo": "GABINETE",
+        "imagen": "../Venta/img/Gabinetes/gabinete-4.jpg",
+        "categoria": {
+            "nombre": "GABINETE",
+            "id": "GABINETES"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "ADAP-01",
+        "titulo": "UDAPTADOR",
+        "imagen": "../Venta/img/Adaptadores/DVI-HDMI1.webp",
+        "categoria": {
+            "nombre": "UDAPTADORES",
+            "id": "ADAP"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "ADAP-02",
+        "titulo": "UDAPTADOR",
+        "imagen": "../Venta/img/Adaptadores/DVI-HDMI2.webp",
+        "categoria": {
+            "nombre": "UDAPTADORES",
+            "id": "ADAP"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "ADAP-03",
+        "titulo": "UDAPTADOR",
+        "imagen": "../Venta/img/Adaptadores/DVI-VGA2.webp",
+        "categoria": {
+            "nombre": "UDAPTADORES",
+            "id": "ADAP"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "ADAP-04",
+        "titulo": "UDAPTADOR",
+        "imagen": "../Venta/img/Adaptadores/DVI-VGAdoble3.webp",
+        "categoria": {
+            "nombre": "UDAPTADORES",
+            "id": "ADAP"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "USB-01",
+        "titulo": "USB",
+        "imagen": "../Venta/img/USBs/USB-1.jpg",
+        "categoria": {
+            "nombre": "USB",
+            "id": "USB"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "USB-02",
+        "titulo": "USB",
+        "imagen": "../Venta/img/USBs/USB-2.jpg",
+        "categoria": {
+            "nombre": "USB",
+            "id": "USB"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "USB-03",
+        "titulo": "USB",
+        "imagen": "../Venta/img/USBs/USB-3.png",
+        "categoria": {
+            "nombre": "USB",
+            "id": "USB"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "USB-04",
+        "titulo": "USB",
+        "imagen": "../Venta/img/USBs/USB-4.jpg",
+        "categoria": {
+            "nombre": "USB",
+            "id": "USB"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "PARLANTE-01",
+        "titulo": "PARLANTE",
+        "imagen": "../Venta/img/Parlantes/parlante1.webp",
+        "categoria": {
+            "nombre": "PARLANTE",
+            "id": "PARLANTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "PARLANTE-02",
+        "titulo": "PARLANTE",
+        "imagen": "../Venta/img/Parlantes/parlante2.webp",
+        "categoria": {
+            "nombre": "PARLANTE",
+            "id": "PARLANTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "PARLANTE-03",
+        "titulo": "PARLANTE",
+        "imagen": "../Venta/img/Parlantes/parlante3.webp",
+        "categoria": {
+            "nombre": "PARLANTE",
+            "id": "PARLANTE"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "PARLANTE-04",
+        "titulo": "PARLANTE",
+        "imagen": "../Venta/img/Parlantes/parlante4.webp",
+        "categoria": {
+            "nombre": "PARLANTE",
+            "id": "PARLANTE"
+        },
+        "precio": 1000
+    }
+
+]

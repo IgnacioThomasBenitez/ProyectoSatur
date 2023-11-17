@@ -1,0 +1,107 @@
+/*:::Boton-Modal:::*/
+.boton-modal {
+    padding: 5px;
+}
+
+.boton-modal label {
+    padding: 3px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 5000s ease;
+}
+
+.boton-modal label:hover {
+    background-color: #185E83;
+}
+
+/*:::Ventana Modal:::*/
+#btn-modal {
+    display: none;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal:checked ~ .container-modal {
+    display: flex;
+}
+
+.content-modal {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.content-modal h2 {
+    margin-bottom: 15px;
+    margin-left: 10em;
+}
+
+.content-modal p {
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    gap: 2em;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.content-modal .btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label {
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.img {
+    max-width: 600%;
+    border-radius: 1rem;
+    height: 20%;
+    width: 40%;
+}
+
+.content-modal .btn-cerrar label:hover {
+    background-color: #185E83;
+}
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*:::Fin Ventana Modal:::*/
+
+/*** MEDIA QUERIES ***/
+@media screen and (max-width: 650px) {
+    .content-modal {
+        width: 90%;
+        height: auto;
+    }
+}

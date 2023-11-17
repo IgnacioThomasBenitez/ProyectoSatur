@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satur</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+	<link rel="shortcut icon" href="/imagenSatur/satur.jpg" type="image/x-icon">
+</head>
+<body style="display:flex; align-items:center; justify-content:center;">
+  <div class="form">
+    <a href="../HTML/Inicio.html" class="a">VOLVER</a>
+    <form class="register-form" method="POST">
+      <h2>Registro</h2>
+      <div style="display:flex; gap:7px;">
+        <input type="text" placeholder="Nombre" id="Nombretxt" required/>
+        <input type="text" placeholder="Apellido" id="Apellidotxt" required/>
+      </div>
+      <div style="display:flex; gap:7px;">
+        <input type="date" placeholder="Fecha de Nacimiento" id="FechaNtxt" required/>
+        <input type="datetime" placeholder="DNI" id="Dnitxt" required/>
+      </div>
+      <div style="display:flex; gap:7px;">
+        <input type="email" placeholder="Email" id="Emailtxt" required/>
+        <input type="text" inputmode="tel" placeholder="Telefono" id="Telefonotxt" required/>
+      </div>
+      <div style="display:flex; gap:7px;">
+        <input type="password" placeholder="Contraseña" id="Contraseñatxt" required/>
+        <input type="password" placeholder="Repita la Contraseña" id="ResContraseñatxt" required/>
+      </div>
+      <a class="btn" onclick="RistrarC()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Crear
+      </a>
+      <p class="message">¿Ya registrado?<a href="#"> Iniciar Sesion</a></p>
+    </form>
+    <form class="login-form" method="post">
+      <h2></i>Inicio de Sesion </h2>
+      <input type="text" id="EmailLogin" placeholder="Email" required />
+      <input type="password" id="PassLogin" placeholder="Contraseña" required/>
+      <a class="btn" onclick="LoginC()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Iniciar Sesion
+      </a>
+      <p class="message">¿No registrado? <a href="#"> Crea tu Cuenta </a></p>
+    </form>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/JS/IngresarVendedor.js"></script>
+<script src="/JS/volver.js"></script>
+    <script src="../JS/login.js"></script>
+    <script src="../JS/registro.js"></script>
+</body>
+
+</html>

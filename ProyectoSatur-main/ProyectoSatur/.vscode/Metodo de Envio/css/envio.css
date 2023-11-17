@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-main: #231169;
+}
+
+.container {
+  width: 100%;
+
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 12px -2px rgba(0, 0, 0, 0.1),
+    0 18px 36px -6px rgba(0, 0, 0, 0.1);
+}
+
+.container .title {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container form .category {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+}
+
+.category label {
+  /* width: 100%; */
+  /* height: 65px; */
+  height: 145px;
+  padding: 20px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  border-radius: 5px;
+  position: relative;
+}
+
+label .imgName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgContainer {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+}
+.imgContainer p {
+  margin-left: 25rem;
+}
+.mensajero{
+  margin-top: -3rem;
+}
+.correo{
+  margin-top: -5rem;
+}
+.tienda{
+  margin-top: -8rem;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+.Sucursal img {
+  width: 200px;
+  margin-top: -2rem;
+  margin-left: -20px;
+}
+
+.Correo img {
+  width: 100px;
+  margin-top: 1rem;
+  margin-left: 26px;
+}
+
+.Domicilio img {
+  width: 80px;
+  margin-top: 2em;
+  margin-left: 26px;
+}

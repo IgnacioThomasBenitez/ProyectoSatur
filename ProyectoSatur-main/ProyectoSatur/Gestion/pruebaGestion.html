@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/Gestion/api/AgregarProductos" method="post" enctype="multipart/form-data"> <!--sacar o no?--->
+        
+        <input type="text" placeholder="nombre" name="nombre" id="nombre"><br><br>
+        <textarea type="text" placeholder="descripcion" name="descripcion" id="descripcion"></textarea><br><br>
+        <input type="number" placeholder="precio" name="precio" id="precio"><br><br>
+        <input type="text" placeholder="stock" name="stock" id="stock"><br><br>
+        <input type="number" placeholder="id_categoria" name="id_categoria" id="id_categoria"><br><br>
+        <input type="number" placeholder="vendedor_id" name="vendedor_id" id="vendedor_id"><br><br>
+        <input type="file" placeholder="img_producto" name="file" id="file"><br><br>
+
+        <input type="submit" value="ENVIAR"><!-- funciona para el envio de datos-->
+
+        <a onclick="RegistrarPro()">ENVIAR </a>
+
+    </form>
+
+    <div id="foto">
+
+        <div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <table id="Productos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>descripcion</th>
+                    <th>precio</th>
+                    <th>stock</th>
+                    <th>categoria</th>
+                    <th>vendedor_id</th>
+                    <th>img_producto</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="funciones.js"></script>
+
+</body>
+</html>
