@@ -3,6 +3,7 @@
         "id": "IMPRESORAS-01",
         "titulo": "IMPRESORA 3D",
         "descripcion":"impresoras", 
+        "info": "Infomacion",
         "imagen": "../Venta/img/impresoras/1.jpg",
         "categoria": {
             "nombre": "IMPRESORAS",
@@ -14,6 +15,7 @@
         "id": "IMPRESORAS-02",
         "titulo": "IMPRESORA 3D",
         "descripcion":"impresoras", 
+        "info": "Infomacion",
         "imagen": "../Venta/img/impresoras/2.png",
         "categoria": {
             "nombre": "IMPRESORAS",
@@ -25,6 +27,7 @@
         "id": "IMPRESORAS-03",
         "titulo": "IMPRESORA",
         "descripcion":"impresoras", 
+        "info": "Infomacion",
         "imagen": "../Venta/img/impresoras/3.jpg",
         "categoria": {
             "nombre": "IMPRESORAS",
@@ -35,7 +38,8 @@
     {
         "id": "IMPRESORAS-04",
         "titulo": "IMPRESORA",
-        "descripcion":"impresoras", 
+        "descripcion":"impresoras",
+        "info": "Infomacion", 
         "imagen": "../Venta/img/impresoras/4.jpg",
         "categoria": {
             "nombre": "IMPRESORAS",

@@ -14,7 +14,8 @@ const tituloPrincipal = document.querySelector("#titulo-principal");
 console.log(tituloPrincipal)
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
-
+const searchInput = document.getElementById("searchInput");
+const noResults = document.getElementById("noResults");
 
 
 
@@ -170,3 +171,13 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+
+const handleSearch = () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const productosElegidos = productos.filter((producto) => producto.titulo.toLowerCase().startsWith(searchTerm));
+    cargarProductos(productosElegidos);
+};
+
+cargarProductos(productos);
+
+searchInput.addEventListener("input", handleSearch);
