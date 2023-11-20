@@ -1,4 +1,4 @@
-let productos = [];
+    let productos = [];
 
 fetch("productos.json")
     .then(response => response.json())
@@ -15,8 +15,6 @@ console.log(tituloPrincipal)
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 const searchInput = document.getElementById("searchInput");
-const noResults = document.getElementById("noResults");
-
 
 
 botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
