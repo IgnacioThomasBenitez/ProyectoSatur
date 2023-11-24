@@ -1,4 +1,6 @@
-    let productos = [];
+let productos = [];
+let productoSeleccionado = null; // Agregué esta línea para definir la variable productoSeleccionado
+
 
 fetch("productos.json")
     .then(response => response.json())
@@ -22,44 +24,123 @@ botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
 }))
 
 
-function cargarProductos(productosElegidos) {
+// Función para cargar productos en el contenedor
+function mostrarInformacionProducto() {
+    if (producto) {
+        // Crear el modal
+        const modal = document.createElement("div");
+        modal.classList.add("modal");
 
+        // Contenido del modal
+        modal.innerHTML = `
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <h2>${productoSeleccionado.titulo}</h2>
+                <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+                <p>${producto.info}</p>
+            </div>
+        `;
+
+        // Agregar el modal al cuerpo del documento
+        document.body.appendChild(modal);
+
+        // Mostrar el modal
+        modal.style.display = "block";
+
+        // Asignar una función para cerrar el modal
+        window.cerrarModal = function () {
+            modal.style.display = "none";
+            modal.remove(); // Eliminar el modal del DOM al cerrar
+            window.cerrarModal = null; // Eliminar la función cerrarModal del ámbito global
+        };
+    }
+}
+
+// Función para cargar productos en el contenedor
+function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
 
     productosElegidos.forEach(producto => {
-
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
             <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
             <div class="producto-detalles">
-                <div class="boton-modal"><label for="btn-modal">Informacion</label></div>
+                <div class="boton-modal" data-producto-id="${producto.id}"><label for="btn-modal">Informacion</label></div>
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <h5 class="producto-titulo">${producto.descripcion}</h5> 
                 <p class="producto-precio">$${producto.precio}</p>
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
-            <input type="checkbox" id="btn-modal">
-            <div class="container-modal">
-                <div class="content-modal">
-                    <h2>Aqui tienes toda la informacion del producto seleccionado</h2>
-                    <p>
-                    <img class="img" src="${producto.imagen}" id="${producto.id}" alt="${producto.titulo}">
-                    ${producto.info}
-                    </p>
-                <div class="btn-cerrar">
-                <label for="btn-modal">Cerrar</label>
-            </div>
         </div>
-        <label for="btn-modal" class="cerrar-modal"></label>
-        </div>
-        </div>
-        `;
+        </div>`;
 
         contenedorProductos.append(div);
-    })
+    });
 
+    // Actualizar botones de agregar y agregar evento clic a los botones de información
     actualizarBotonesAgregar();
+
+    const botonesInformacion = document.querySelectorAll('.boton-modal');
+    botonesInformacion.forEach(boton => {
+        boton.addEventListener('click', () => {
+            const productoId = boton.dataset.productoId;
+            productoSeleccionado = productos.find(producto => producto.id === productoId);
+            mostrarInformacionProducto();
+        });
+    });
+}
+
+{/* <div class="container-modal">
+            <div class="content-modal">
+                <h2>Aqui tienes toda la informacion del producto seleccionado</h2>
+                <p>
+                <img class="img" src="${producto.imagen}" id="${producto.id}" alt="${producto.titulo}">
+                ${producto.info}
+                </p>
+            <div class="btn-cerrar">
+            <label for="btn-modal">Cerrar</label> */}
+
+// ...
+
+// Función para mostrar la información del producto en otro lugar
+// function mostrarInformacionProducto() {
+//     if (productoSeleccionado) {
+//         // Puedes mostrar la información en otro lugar, por ejemplo, en la consola
+//         console.log("Información del producto seleccionado:", productoSeleccionado);
+
+//         // También puedes mostrar la información en un modal diferente o en cualquier otro lugar de la interfaz
+//         // Aquí puedes agregar lógica para mostrar la información donde lo desees
+
+//         // Limpiar la variable de producto seleccionado después de mostrar la información
+//         productoSeleccionado = null;
+//     }
+// }
+
+// function mostrarInformacionProducto() {
+//     if (productoSeleccionado) {
+//         // Obtener el elemento del popup por su ID
+//         const popup = document.getElementById("miPopup");
+
+//         // Modificar el contenido del popup con la información del producto
+//         popup.innerHTML = "Información del producto seleccionado:<br>" + JSON.stringify(productoSeleccionado);
+
+//         // Mostrar el popup (puedes agregar tu lógica específica aquí)
+//         popup.style.display = "block";
+
+//         // Limpiar la variable de producto seleccionado después de mostrar la información
+//         productoSeleccionado = null;
+//     }
+// }
+
+function mostrarInformacionProducto() {
+    if (productoSeleccionado) {
+        // Puedes mostrar la información en un popup utilizando alert
+        alert("Información del producto seleccionado:\n" + JSON.stringify(productoSeleccionado));
+
+        // Limpiar la variable de producto seleccionado después de mostrar la información
+        productoSeleccionado = null;
+    }
 }
 
 
