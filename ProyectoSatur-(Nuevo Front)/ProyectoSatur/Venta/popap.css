@@ -22,6 +22,8 @@
 }
 
 .container-modal {
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -29,8 +31,6 @@
     left: 0;
     backdrop-filter: blur(10px);
     display: none;
-    justify-content: center;
-    align-items: center;
     z-index: 100;
 }
 
@@ -39,26 +39,43 @@
 }
 
 .content-modal {
-    width: 80%;
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    max-width: 500px; /* Puedes establecer un ancho máximo si lo deseas */
     padding: 20px;
     background-color: #cacaca;
     border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    height: auto;
+    overflow-y: auto;
 }
+
 
 .content-modal h2 {
     margin-bottom: 15px;
-    margin-left: 10em;
+    text-align: center; /* Alinea el texto al centro */
 }
 
 .content-modal p {
     align-items: center;
     display: flex;
-    position: relative;
     padding: 15px 0px;
-    border-top: 1px solid #dbdbdb;
     gap: 2em;
+    border-top: 1px solid #dbdbdb;
     border-bottom: 1px solid #dbdbdb;
 }
+
+.img {
+    max-width: 100%;
+    border-radius: 1rem;
+    height: 50%; /* Ajusta la altura automáticamente */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    margin: 0 auto;
+}
+
 
 .content-modal .btn-cerrar {
     width: 100%;
@@ -74,13 +91,6 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 300ms ease;
-}
-
-.img {
-    max-width: 600%;
-    border-radius: 1rem;
-    height: 20%;
-    width: 40%;
 }
 
 .content-modal .btn-cerrar label:hover {
@@ -102,6 +112,7 @@
 @media screen and (max-width: 650px) {
     .content-modal {
         width: 90%;
+        min-width: 300px; /* Establece un ancho mínimo */
         height: auto;
     }
 }

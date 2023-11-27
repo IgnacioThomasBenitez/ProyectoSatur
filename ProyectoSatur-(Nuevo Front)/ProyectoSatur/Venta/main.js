@@ -23,39 +23,6 @@ botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
 }))
 
-
-// Función para cargar productos en el contenedor
-function mostrarInformacionProducto() {
-    if (producto) {
-        // Crear el modal
-        const modal = document.createElement("div");
-        modal.classList.add("modal");
-
-        // Contenido del modal
-        modal.innerHTML = `
-            <div class="modal-content">
-                <span class="close" onclick="cerrarModal()">&times;</span>
-                <h2>${productoSeleccionado.titulo}</h2>
-                <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
-                <p>${producto.info}</p>
-            </div>
-        `;
-
-        // Agregar el modal al cuerpo del documento
-        document.body.appendChild(modal);
-
-        // Mostrar el modal
-        modal.style.display = "block";
-
-        // Asignar una función para cerrar el modal
-        window.cerrarModal = function () {
-            modal.style.display = "none";
-            modal.remove(); // Eliminar el modal del DOM al cerrar
-            window.cerrarModal = null; // Eliminar la función cerrarModal del ámbito global
-        };
-    }
-}
-
 // Función para cargar productos en el contenedor
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
@@ -72,7 +39,6 @@ function cargarProductos(productosElegidos) {
                 <p class="producto-precio">$${producto.precio}</p>
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
-        </div>
         </div>`;
 
         contenedorProductos.append(div);
@@ -89,59 +55,55 @@ function cargarProductos(productosElegidos) {
             mostrarInformacionProducto();
         });
     });
+
 }
-
-{/* <div class="container-modal">
-            <div class="content-modal">
-                <h2>Aqui tienes toda la informacion del producto seleccionado</h2>
-                <p>
-                <img class="img" src="${producto.imagen}" id="${producto.id}" alt="${producto.titulo}">
-                ${producto.info}
-                </p>
-            <div class="btn-cerrar">
-            <label for="btn-modal">Cerrar</label> */}
-
-// ...
-
-// Función para mostrar la información del producto en otro lugar
-// function mostrarInformacionProducto() {
-//     if (productoSeleccionado) {
-//         // Puedes mostrar la información en otro lugar, por ejemplo, en la consola
-//         console.log("Información del producto seleccionado:", productoSeleccionado);
-
-//         // También puedes mostrar la información en un modal diferente o en cualquier otro lugar de la interfaz
-//         // Aquí puedes agregar lógica para mostrar la información donde lo desees
-
-//         // Limpiar la variable de producto seleccionado después de mostrar la información
-//         productoSeleccionado = null;
-//     }
-// }
-
-// function mostrarInformacionProducto() {
-//     if (productoSeleccionado) {
-//         // Obtener el elemento del popup por su ID
-//         const popup = document.getElementById("miPopup");
-
-//         // Modificar el contenido del popup con la información del producto
-//         popup.innerHTML = "Información del producto seleccionado:<br>" + JSON.stringify(productoSeleccionado);
-
-//         // Mostrar el popup (puedes agregar tu lógica específica aquí)
-//         popup.style.display = "block";
-
-//         // Limpiar la variable de producto seleccionado después de mostrar la información
-//         productoSeleccionado = null;
-//     }
-// }
-
 function mostrarInformacionProducto() {
     if (productoSeleccionado) {
-        // Puedes mostrar la información en un popup utilizando alert
-        alert("Información del producto seleccionado:\n" + JSON.stringify(productoSeleccionado));
+        // Verificar si ya hay un modal existente y eliminarlo
+        const modalExistente = document.querySelector(".miPopup");
+        if (modalExistente) {
+            modalExistente.remove();
+        }
 
-        // Limpiar la variable de producto seleccionado después de mostrar la información
-        productoSeleccionado = null;
+        // Crear un nuevo modal
+        const nuevoModal = document.createElement("div");
+        nuevoModal.classList.add("miPopup", "container-modal");
+        nuevoModal.innerHTML = `
+            <div class="content-modal">
+                <h2>${productoSeleccionado.titulo}</h2>
+                <img class="img" src="${productoSeleccionado.imagen}" id="${productoSeleccionado.id}" alt="${productoSeleccionado.titulo}">
+                <p>${productoSeleccionado.info}</p>
+                <div class="btn-cerrar" onclick="cerrarModal()">
+                <label for="btn-modal">Cerrar</label>
+            </div>
+        `;
+
+        // Agregar el nuevo modal al cuerpo del documento
+        document.body.appendChild(nuevoModal);
+
+        // Mostrar el modal
+        nuevoModal.style.display = "block";
+
+        // Asignar una función para cerrar el modal
+        window.cerrarModal = function () {
+            nuevoModal.style.display = "none";
+            nuevoModal.remove(); // Eliminar el modal del DOM
+            window.cerrarModal = null; // Eliminar la función cerrarModal del ámbito global
+        };
     }
 }
+
+
+
+// function mostrarInformacionProducto() {
+//     if (productoSeleccionado) {
+//         // Puedes mostrar la información en un popup utilizando alert
+//         alert("Información del producto seleccionado:\n" + JSON.stringify(productoSeleccionado));
+
+//         // Limpiar la variable de producto seleccionado después de mostrar la información
+//         productoSeleccionado = null;
+//     }
+// }
 
 
 
@@ -189,39 +151,40 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
+    // Obtener el ID del botón que activó el evento
     const idBoton = e.currentTarget.id;
 
+    // Verificar si el producto ya está en el carrito
     if (productosEnCarrito.some(producto => producto.id === idBoton)) {
-        // El producto ya está en el carrito
-        Toastify({
-            text: "Tu producto ya esta en el carrito",
-            duration: 3000,
-            close: true,
-            gravedad: "arriba", // `arriba` o `abajo`
-            posición: "derecha", // `izquierda`, `centro` o `derecha`
-            stopOnFocus: true, // Evita que se descarte el brindis al pasar el mouse por encima
-            style: {
-                background: "linear-gradient(to right, #4b33a8, #785ce9)",
-                borderRadius: "2rem",
-                textTransform: "uppercase",
-                fontSize: ".75rem"
-            },
-            offset: {
-                x: '1.5rem', // eje horizontal: puede ser un número o una cadena que indique la unidad. por ejemplo: '2em'
-                y: '1.5rem' // eje vertical: puede ser un número o una cadena que indique la unidad. por ejemplo: '2em'
-            },
-            onClick: function () {} // Callback after click
-        }).showToast();
-        return
+        // Mostrar un mensaje indicando que el producto ya está en el carrito
+        mostrarMensaje("Tu producto ya está en el carrito");
+        return;
+    } else {
+        // Mostrar un mensaje indicando que el producto fue agregado al carrito
+        mostrarMensaje("Producto agregado");
     }
-    else {
+
+    // Encontrar el producto correspondiente al ID del botón
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+
+    // Establecer la cantidad del producto a 1 y agregarlo al carrito
+    productoAgregado.cantidad = 1;
+    productosEnCarrito.push(productoAgregado);
+
+    // Actualizar el contador del carrito y almacenar en el almacenamiento local
+    actualizarNumerito();
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+}
+
+function mostrarMensaje(mensaje) {
+    // Mostrar un mensaje Toastify con el texto proporcionado
     Toastify({
-        text: "Producto agregado",
+        text: mensaje,
         duration: 3000,
         close: true,
-        gravedad: "arriba", // `arriba` o `abajo`
-        posición: "derecha", // `izquierda`, `centro` o `derecha`
-        stopOnFocus: true, // Evita que se descarte el brindis al pasar el mouse por encima
+        gravedad: "arriba",
+        posición: "derecha",
+        stopOnFocus: true,
         style: {
             background: "linear-gradient(to right, #4b33a8, #785ce9)",
             borderRadius: "2rem",
@@ -229,20 +192,11 @@ function agregarAlCarrito(e) {
             fontSize: ".75rem"
         },
         offset: {
-            x: '1.5rem', // eje horizontal: puede ser un número o una cadena que indique la unidad. por ejemplo: '2em'
-            y: '1.5rem' // eje vertical: puede ser un número o una cadena que indique la unidad. por ejemplo: '2em'
+            x: '1.5rem',
+            y: '1.5rem'
         },
-        onClick: function () { } // Callback after click
+        onClick: function () { }
     }).showToast();
-}
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
-
-    productoAgregado.cantidad = 1;
-    productosEnCarrito.push(productoAgregado);
-
-    actualizarNumerito();
-
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
 

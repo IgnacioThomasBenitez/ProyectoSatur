@@ -2,15 +2,17 @@
     {
         "id": "IMPRESORAS-01",
         "titulo": "IMPRESORA 3D",
-        "descripcion":"impresorassss", 
-        "info": "Infomaciones",
+        "descripcion": "impresorassss",
+        "info": "Lo que tenés que saber de este producto, Tecnología de impresión: FDM. Tamaño de la zona de impresión: 220mm de largo, 220mm de ancho y 250mm de alto. Peso de la impresora: 7.8kg. Temperatura máxima de la cama: 100°C. Nueva tecnologia de alto desempeño, creá un objeto desde cero.",
         "imagen": "../Venta/img/impresoras/1.jpg",
         "categoria": {
             "nombre": "IMPRESORAS",
             "id": "IMPRESORAS"
         },
-        "precio":1000
+        "precio": 1000
     },
+    
+    
     {
         "id": "IMPRESORAS-02",
         "titulo": "IMPRESORA 3D",
