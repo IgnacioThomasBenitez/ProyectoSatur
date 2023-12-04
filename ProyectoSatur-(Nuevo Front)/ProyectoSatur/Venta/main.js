@@ -51,6 +51,7 @@ function cargarProductos(productosElegidos) {
     botonesInformacion.forEach(boton => {
         boton.addEventListener('click', () => {
             const productoId = boton.dataset.productoId;
+            console.log(productoId)
             productoSeleccionado = productos.find(producto => producto.id === productoId);
             mostrarInformacionProducto();
         });
