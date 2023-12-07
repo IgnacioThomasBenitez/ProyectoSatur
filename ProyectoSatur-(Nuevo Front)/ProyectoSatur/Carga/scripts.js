@@ -1,4 +1,4 @@
 window.onload = function(){
-    $('#onload').fadeOut(5000);
+    $('#onload').fadeOut(10000);
     $('body').removeClass('hidden');
 }
